@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHall", "MontyHall\MontyHall.csproj", "{42F3A553-C4FE-4715-8A12-EBF8740C36D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallTests", "MontyHallTests\MontyHallTests.csproj", "{7A141BCA-100C-47AD-8A7A-6D044EB95230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F3A553-C4FE-4715-8A12-EBF8740C36D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F3A553-C4FE-4715-8A12-EBF8740C36D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F3A553-C4FE-4715-8A12-EBF8740C36D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F3A553-C4FE-4715-8A12-EBF8740C36D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A141BCA-100C-47AD-8A7A-6D044EB95230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A141BCA-100C-47AD-8A7A-6D044EB95230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A141BCA-100C-47AD-8A7A-6D044EB95230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A141BCA-100C-47AD-8A7A-6D044EB95230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8363018D-50DD-45BE-A1B5-5685A7719A26}
+	EndGlobalSection
+EndGlobal
