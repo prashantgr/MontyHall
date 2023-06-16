@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,34 +13,42 @@ namespace MontyHall
     {
         public SimulationResult SimulateGames(int numSimulations, bool switchDoor)
         {
+
             SimulationResult result = new SimulationResult();
             result.TotalGames = numSimulations;
 
-            Random random = new Random();
-
-            for (int i = 0; i < numSimulations; i++)
+            try
             {
-                int carDoor = random.Next(1, 4); // Randomly assign the car behind one of the three doors
-                int chosenDoor = random.Next(1, 4); // Player's initial door choice
+                Random random = new Random();
 
-                if (!switchDoor)
+                for (int i = 0; i < numSimulations; i++)
                 {
-                    // Player sticks with the initial choice
-                    if (chosenDoor == carDoor)
+                    int carDoor = random.Next(1, 4); // Randomly assign the car behind one of the three doors
+                    int chosenDoor = random.Next(1, 4); // Player's initial door choice
+
+                    if (!switchDoor)
                     {
-                        result.Wins++; // Player wins
+                        // Player sticks with the initial choice
+                        if (chosenDoor == carDoor)
+                        {
+                            result.Wins++; // Player wins
+                        }
                     }
-                }
-                else
-                {
-                    // Player switches doors
-                    if (chosenDoor != carDoor)
+                    else
                     {
-                        result.Wins++; // Player wins
+                        // Player switches doors
+                        if (chosenDoor != carDoor)
+                        {
+                            result.Wins++; // Player wins
+                        }
                     }
                 }
             }
-
+            catch (Exception ex)
+            {
+                // Handle the exception here, such as logging or displaying an error message
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
             return result;
         }
     }
